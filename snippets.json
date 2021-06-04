@@ -1,0 +1,13 @@
+{
+	"MobX Getter Setter": {
+		"prefix": "obv",
+		"body": [
+			"@observable",
+			"$1 $2;",
+			"@action",
+			"set${2/(.*)/${1:/captalize}/}($1 value) => $2 = value;",
+			""
+		],
+		"description": "Create MobX Getter Setter"
+	}
+}
